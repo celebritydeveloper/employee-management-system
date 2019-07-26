@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee Management App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="import" href="component.html">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <a href="#">
+                <img src="./img/boring-logo.png" alt="Brand logo">
+            </a>
+        </div>
+
+        <ul class="header__links">
+            <li><a href="#">Calender</a></li>
+            <li><a href="#">Statistics</a></li>
+            <li><a href="#" class="active--links">Employee</a></li>
+            <li><a href="#">Client</a></li>
+            <li><a href="#">Equipment</a></li>
+        </ul>
+
+        <div class="header__user">
+            <div class="header__user__notif">
+                <i class="icofont-alarm"></i>
+            </div>
+            <div class="header__user__message">
+                <i class="icofont-envelope"></i>
+            </div>
+            <div class="header__user__img">
+                <img src="./img/essien.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main__title">
+            <h2>employees</h2>
+            <button type="button" class="btn btn-small">add employee</button>
+        </div>
+        <div class="clear-fix"></div>
+        <section class="nav">
+            
+            <div class="nav__employee">
+                <div class="nav__all">
+                    <img src="./img/our-vision.png" alt="">
+                    <h3 class="nav__employee--title">all employees</h3>
+                </div>
+
+                <div class="nav__project">
+                    <h3 class="nav__project--title">project</h3>
+                    <div class="nav__project__link">
+                        <a href="#">
+                            <img src="./img/our-vision.png" alt="">
+                            <p>Arena sport</p>
+                        </a>
+                    </div>
+                    <div class="nav__project__link">
+                        <a href="#">
+                            <img src="./img/our-vision.png" alt="">
+                            <p>DSV</p>
+                        </a>
+                    </div>
+
+                    <div class="nav__project__link active-link">
+                        <a href="#">
+                            <img src="./img/our-vision.png" alt="">
+                            <p>Seafood Mall</p>
+                        </a>
+                    </div>
+
+                    <div class="nav__project__link">
+                        <a href="#">
+                            <img src="./img/our-vision.png" alt="">
+                            <p>FireStar</p>
+                        </a>
+                    </div>
+
+                    <div class="nav__project__link">
+                        <a href="#">
+                            <img src="./img/our-vision.png" alt="">
+                            <p>Zeta Bank</p>
+                        </a>
+                    </div>
+            
+                </div>
+
+
+                <div class="nav__status">
+                    <h3 class="nav__project--title">status</h3>
+                    <div class="nav__project__link">
+                        <a href="#">
+                            <img src="./img/our-vision.png" alt="">
+                            <p>Full time</p>
+                        </a>
+                    </div>
+                    <div class="nav__project__link">
+                        <a href="#">
+                            <img src="./img/our-vision.png" alt="">
+                            <p>Part time</p>
+                        </a>
+                    </div>
+                </div>
+                    
+                <button type="button" class="btn btn-big">add project</button>
+            </div>
+        </section>
+
+        <section class="employees">
+            
+            <div class="employees__table">
+                <div class="employees__title">
+                    <input type="checkbox">
+                    <h3>employee <i class="icofont-long-arrow-up"></i></h3>
+                    <h3 class="salary">salary <i class="icofont-long-arrow-up"></i></h3>
+                    <h3>status <i class="icofont-long-arrow-down"></i></h3>
+                    <h3>manage</h3>
+                </div>
+
+                <div class="employees__single">
+                    <input type="checkbox" name="" id="">
+                    <div class="employees__info">
+                        <img src="" class="employees--img" alt="">
+                        <div class="employees__single__name">
+                            <h4 class="employees--name"></h4>
+                            <p class="employees--title"></p>
+                        </div>
+                    </div>
+
+                    <div class="employees__salary">
+                        <h4>3,200 NOK <span class="success">+300</span></h4>
+                        <p>full time</p>
+                    </div>
+
+                    <div class="employees__status">
+                        <h4>test period</h4>
+                        <p>2 months</p>
+                    </div>
+
+                    <div class="employees__manage">
+                        <h4 class="manage--edit"><i class="icofont-ui-edit"></i></h4>
+                        <h4 class="manage--divider"></h4>
+                        <h4 class="manage--delete"><i class="icofont-ui-delete"></i></h4>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+        <h1>Authors</h1>
+  <ul id="authors"></ul>
+
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
